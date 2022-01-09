@@ -1,4 +1,4 @@
-import { toggleSound } from "./sounds.js";
+import { runMusic, toggleSound } from "./sounds.js";
 import { ChangeBody } from "./game-structure.js";
 const main = (() => {
     const soundItem = document.querySelector('.sound-icon i');
@@ -8,6 +8,7 @@ const main = (() => {
     const titleSlogan = document.querySelector('#header .title').lastElementChild;
 
     toggleSound(soundItem);
+    runMusic(true);
 
     //run the game options div
     newGameBtn.addEventListener('click', () => {

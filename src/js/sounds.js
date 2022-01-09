@@ -1,4 +1,4 @@
-let soundStatus;
+let soundStatus = true;
 const toggleSound = (soundIcon) => {
     soundIcon.addEventListener('click', () => {
         if (soundIcon.classList.contains('fa-volume-mute')) {
@@ -40,4 +40,4 @@ const runMusic = (sound) => {
 
 };
 
-export { toggleSound, soundStatus, soundItem };
+export { toggleSound, soundStatus, soundItem, runMusic };
