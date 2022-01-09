@@ -1,0 +1,22 @@
+{
+  "name": "classic-battel-ship-game",
+  "version": "1.0.0",
+  "description": "classic battle ship game",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/u31999/classic-battel-ship-game.git"
+  },
+  "author": "ahmed hassan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/u31999/classic-battel-ship-game/issues"
+  },
+  "homepage": "https://github.com/u31999/classic-battel-ship-game#readme",
+  "dependencies": {
+    "jest": "^27.4.5"
+  }
+}

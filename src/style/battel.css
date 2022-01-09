@@ -1,0 +1,117 @@
+@import url('res.css');
+:root {
+    --orange-color : #FF9800;
+    --half-black-color : rgb(0 0 0 / .5);
+}
+
+.left-battle {
+    flex-direction: column !important;
+}
+.fleet-tittle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: var(--font-tigerios-italic);
+    color: var(--sand-color);
+    text-shadow: black 2px 2px 2px;
+}
+
+#body .message {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--half-black-color);
+    color: white;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: 900;
+    font-family: var(--font-tigerios-italic);
+    color: var(--orange-color);
+    text-shadow: black 1px 1px 1px;
+    animation: fadein-opacity 500ms ease-in;
+    animation: fadeout 500ms ease-in 700ms forwards;
+}
+
+.battle-state {
+    flex-direction: column;
+    gap: 10px;
+}
+
+.battle-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: var(--half-black-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    animation: fadein-opacity 500ms ease-in;
+}
+
+.battle-menu button {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    font-family: var(--font-tigerios-regular);
+    background-color: var(--sand-color);
+    text-shadow: black 2px 2px 2px;
+    border : none;
+    border-radius: 20px;
+}
+
+.battle-menu .resume-btn {
+    color: var(--sea-color);
+}
+
+.battle-menu .rematch-btn, .battle-menu .home-btn {
+    color: var(--silverColor);
+}
+
+.battle-menu .resume-btn:hover {
+    cursor: pointer;
+    background-color: var(--sea-color);
+    color: var(--sand-color);
+}
+
+.battle-menu .rematch-btn:hover, .battle-menu .home-btn:hover {
+    cursor: pointer;
+    background-color: var(--silverColor);
+    color: var(--sand-color);
+}
+
+.right-body-battle {
+    margin-right: 0;
+    display: flex !important;
+    align-items: center !important;
+}
+
+.battel-status .right-body {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap : 0;
+}
+
+.battel-status .right-body .sea-board:hover {
+    cursor: url('/src/img/target-cursor.png'), auto;
+}
+
+
+
+

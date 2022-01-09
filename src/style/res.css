@@ -1,0 +1,123 @@
+/*css variabled*/
+:root {
+    --blackGroundColor : rgb(52 52 52);
+    --silverColor : rgb(192,192,192); 
+    --darkSilverColor : rgb(96 125 139);
+    --underLineColor: #ff6767;
+    --font-tigerios-italic : 'tigeriousitalic';
+    --font-tigerios-regular : 'tigeriousregular';
+    --bizar-animation  : cubic-bezier(.6,.58,.45,.45);
+    --body-border-color : rgb(238 235 235 / 50%);
+    --sea-color : #006A94;
+    --sand-color : #9e7015;
+    --sand-text-color : #e4e3e2;
+}
+
+/*animations*/
+@keyframes fadeout {
+    0%{
+        opacity: 1;
+    }
+    25%{
+        opacity: .75;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: .25;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    0%{
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    25%{
+        opacity: .25;
+        transform: translateY(-75%);
+
+    }
+    50%{
+        opacity: 0.25;
+        transform: translateY(-50%);
+    }
+    75%{
+        opacity: .5;
+        transform: translateY(-25%);
+
+    }
+    80%{
+        opacity: .6;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(1%);
+
+    }
+}
+
+@keyframes fadein-right {
+    0%{
+        opacity: 0;
+        transform: translateX(-200%);
+    }
+    25%{
+        opacity: .1;
+    }
+    50%{
+        opacity: .3;
+    }
+    75%{
+        opacity: 0.5;
+
+    }
+    85%{
+        opacity: 0.6;
+
+    }
+    90%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+    
+@keyframes fadein-opacity {
+    0%{
+        opacity: 0;
+    }
+    25%{
+        opacity: .25;
+    }
+    50%{
+        opacity: .5;
+    }
+    75%{
+        opacity: .75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadein-opacity-half {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: .25;
+    }
+    100%{
+        opacity: .5;
+    }
+
+    
+}
