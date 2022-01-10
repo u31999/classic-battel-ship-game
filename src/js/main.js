@@ -8,7 +8,7 @@ const main = (() => {
     const titleSlogan = document.querySelector('#header .title').lastElementChild;
 
     toggleSound(soundItem);
-    runMusic(true);
+    
 
     //run the game options div
     newGameBtn.addEventListener('click', () => {
